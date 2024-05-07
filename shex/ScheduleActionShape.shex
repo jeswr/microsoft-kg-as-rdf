@@ -9,9 +9,9 @@ PREFIX sh: <http://www.w3.org/ns/shacl#>
       schema:target IRI *;
       schema:participant IRI *;
       schema:agent IRI *;
-      schema:startTime <http://www.w3.org/2001/XMLSchema#time>*;
+      schema:startTime <http://www.w3.org/2001/XMLSchema#dateTime>*;
       schema:provider IRI *;
-      schema:endTime <http://www.w3.org/2001/XMLSchema#time>*;
+      schema:endTime <http://www.w3.org/2001/XMLSchema#dateTime>*;
       schema:location <http://www.w3.org/2001/XMLSchema#string>*;
       schema:alternateName <http://www.w3.org/2001/XMLSchema#string>*;
       schema:disambiguatingDescription <http://www.w3.org/2001/XMLSchema#string>*;

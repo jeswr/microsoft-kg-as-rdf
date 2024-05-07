@@ -28,8 +28,10 @@ SELECT DISTINCT ?property ?comment ?label WHERE {
 const prefixesRecord = { schema: 'https://schema.org/', owl: 'http://www.w3.org/2002/07/owl#', rdf: 'http://www.w3.org/1999/02/22-rdf-syntax-ns#', rdfs: 'http://www.w3.org/2000/01/rdf-schema#', sh: 'http://www.w3.org/ns/shacl#' } as Record<string, string>;
 
 const datatypeMapping = {
-    'https://schema.org/Time': 'http://www.w3.org/2001/XMLSchema#time',
-    'https://schema.org/Date': 'http://www.w3.org/2001/XMLSchema#date',
+    // 'https://schema.org/Time': 'http://www.w3.org/2001/XMLSchema#time',
+    // 'https://schema.org/Date': 'http://www.w3.org/2001/XMLSchema#date',
+    'https://schema.org/Time': 'http://www.w3.org/2001/XMLSchema#dateTime',
+    'https://schema.org/Date': 'http://www.w3.org/2001/XMLSchema#dateTime',
     'https://schema.org/DateTime': 'http://www.w3.org/2001/XMLSchema#dateTime',
     'https://schema.org/Number': 'http://www.w3.org/2001/XMLSchema#double',
     'https://schema.org/Boolean': 'http://www.w3.org/2001/XMLSchema#boolean',
