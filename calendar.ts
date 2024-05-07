@@ -6,12 +6,6 @@ import { iterate } from "./iterate";
 import { ScheduleActionShapeShapeType } from './ldo/ScheduleActionShape.shapeTypes';
 
 async function main() {
-    // const res = await authFetch(`https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=${new Date(Date.now()).toISOString()}&endDateTime=${new Date(Date.now() + 1000 * 60 * 60 * 24 * 7).toISOString()}`);
-    // const res = await authFetch('https://graph.microsoft.com/v1.0/me/calendar/getSchedule', {
-    //     method: 'POST',
-    // });
-    // const events = await res.json() as { value: MicrosoftGraph.Event[] };
-    
     // Iterate through events in the past
     const result: Quad[] = [];
     for await (const event of iterate<MicrosoftGraph.Event>(`https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=${new Date(Date.now()).toISOString()}&endDateTime=${new Date(Date.now() + 1000 * 60 * 60 * 24 * 7 * 5).toISOString()}`)) {
@@ -33,10 +27,9 @@ async function main() {
     console.log(await write(result, {
         prefixes: {
             schema: 'https://schema.org/',
+            xsd: 'http://www.w3.org/2001/XMLSchema#',
         }
     }));
-
-    // console.log(await res.json());
 }
 
 main();
