@@ -1,0 +1,11 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT ?property ?comment ?label WHERE {
+    GRAPH ?g {
+        ?classIri rdfs:subClassOf*/^schema:domainIncludes ?property .
+        OPTIONAL { ?property rdfs:comment ?comment }
+        OPTIONAL { ?property rdfs:label ?label }
+    }
+}
