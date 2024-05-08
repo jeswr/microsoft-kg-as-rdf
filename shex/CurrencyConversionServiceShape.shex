@@ -1,0 +1,35 @@
+PREFIX schema: <https://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+<http://example.org/CurrencyConversionServiceShape> {
+(    schema:interestRate <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:annualPercentageRate <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:feesAndCommissionsSpecification <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:areaServed <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:award <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:isRelatedTo IRI *;
+      schema:isSimilarTo IRI *;
+      schema:slogan <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:termsOfService <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:brand IRI *;
+      schema:broker IRI *;
+      schema:logo IRI *;
+      schema:providerMobility <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:category <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:offers IRI *;
+      schema:serviceArea IRI *;
+      schema:provider IRI *;
+      schema:serviceType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:name <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:identifier <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:description <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:alternateName <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:subjectOf IRI *;
+      schema:image IRI *;
+      schema:additionalType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:mainEntityOfPage IRI *;
+      schema:disambiguatingDescription <http://www.w3.org/2001/XMLSchema#string>*)
+}

@@ -6,6 +6,8 @@ import { iterate } from "./iterate";
 import { ScheduleActionShapeShapeType } from './ldo/ScheduleActionShape.shapeTypes';
 
 async function main() {
+    const res = await fetch('https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2021-09-01T00:00:00Z&endDateTime=2021-09-30T00:00:00Z');
+    
     // Iterate through events in the past
     const result: Quad[] = [];
     for await (const event of iterate<MicrosoftGraph.Event>(`https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=${new Date(Date.now()).toISOString()}&endDateTime=${new Date(Date.now() + 1000 * 60 * 60 * 24 * 7 * 5).toISOString()}`)) {

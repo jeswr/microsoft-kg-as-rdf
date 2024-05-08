@@ -1,0 +1,98 @@
+PREFIX schema: <https://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+<http://example.org/SatiricalArticleShape> {
+(    schema:backstory <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:pagination <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:pageStart <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:articleSection <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:articleBody <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:pageEnd <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:speakable IRI *;
+      schema:contributor IRI *;
+      schema:isPartOf IRI *;
+      schema:dateModified <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:pattern <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:audio IRI *;
+      schema:awards <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:award <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:position <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:publisher IRI *;
+      schema:publishingPrinciples IRI *;
+      schema:genre <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:headline <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:acquireLicensePage IRI *;
+      schema:usageInfo IRI *;
+      schema:assesses <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:creativeWorkStatus <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:sdLicense IRI *;
+      schema:educationalUse <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:contentRating <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:temporalCoverage <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:creator IRI *;
+      schema:accessibilitySummary <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:copyrightYear <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:isBasedOnUrl IRI *;
+      schema:isBasedOn IRI *;
+      schema:license IRI *;
+      schema:interactivityType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:dateCreated <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:citation <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:conditionsOfAccess <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:material <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:learningResourceType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:correction <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:author IRI *;
+      schema:producer IRI *;
+      schema:accessMode <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:editEIDR <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:copyrightHolder IRI *;
+      schema:alternativeHeadline <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:version <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:isFamilyFriendly <http://www.w3.org/2001/XMLSchema#boolean>*;
+      schema:materialExtent <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:size <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:maintainer IRI *;
+      schema:copyrightNotice <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:offers IRI *;
+      schema:isAccessibleForFree <http://www.w3.org/2001/XMLSchema#boolean>*;
+      schema:text <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:fileFormat <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:encodingFormat <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:keywords <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:sponsor IRI *;
+      schema:accessibilityAPI <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:sdPublisher IRI *;
+      schema:archivedAt IRI *;
+      schema:datePublished <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:teaches <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:typicalAgeRange <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:sdDatePublished <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:funder IRI *;
+      schema:expires <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:temporal <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:accessibilityControl <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:accessibilityFeature <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:inLanguage <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:provider IRI *;
+      schema:abstract <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:video IRI *;
+      schema:creditText <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:schemaVersion <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:translator IRI *;
+      schema:accessibilityHazard <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:contentReferenceTime <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:educationalLevel <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:name <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:identifier <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:description <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:alternateName <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:subjectOf IRI *;
+      schema:image IRI *;
+      schema:additionalType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:mainEntityOfPage IRI *;
+      schema:disambiguatingDescription <http://www.w3.org/2001/XMLSchema#string>*)
+}

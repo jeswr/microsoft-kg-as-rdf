@@ -1,0 +1,34 @@
+PREFIX schema: <https://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+<http://example.org/CDCPMDRecordShape> {
+(    schema:cvdNumBedsOcc <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:cvdNumVentUse <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:cvdNumICUBedsOcc <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:cvdNumBeds <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:datePosted <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:cvdNumC19OFMechVentPats <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:cvdNumC19Died <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:cvdNumC19HOPats <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:cvdNumVent <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:cvdNumTotBeds <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:cvdNumC19HospPats <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:cvdCollectionDate <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:cvdNumC19OverflowPats <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:cvdFacilityCounty <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:cvdFacilityId <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:cvdNumICUBeds <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:cvdNumC19MechVentPats <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:name <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:identifier <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:description <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:alternateName <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:subjectOf IRI *;
+      schema:image IRI *;
+      schema:additionalType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:mainEntityOfPage IRI *;
+      schema:disambiguatingDescription <http://www.w3.org/2001/XMLSchema#string>*)
+}

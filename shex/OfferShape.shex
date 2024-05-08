@@ -1,0 +1,45 @@
+PREFIX schema: <https://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+<http://example.org/OfferShape> {
+(    schema:eligibleRegion <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:areaServed <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:gtin14 <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:gtin <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:seller IRI *;
+      schema:availabilityStarts <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:priceCurrency <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:offeredBy IRI *;
+      schema:price <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:priceValidUntil <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:gtin12 <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:category <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:serialNumber <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:isFamilyFriendly <http://www.w3.org/2001/XMLSchema#boolean>*;
+      schema:availabilityEnds <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:itemOffered IRI *;
+      schema:validFrom <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:mobileUrl <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:mpn <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:acceptedPaymentMethod IRI *;
+      schema:checkoutPageURLTemplate <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:validThrough <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:gtin13 <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:ineligibleRegion <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:sku <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:gtin8 <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:asin <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:leaseLength IRI *;
+      schema:name <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:identifier <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:description <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:alternateName <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:subjectOf IRI *;
+      schema:image IRI *;
+      schema:additionalType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:mainEntityOfPage IRI *;
+      schema:disambiguatingDescription <http://www.w3.org/2001/XMLSchema#string>*)
+}

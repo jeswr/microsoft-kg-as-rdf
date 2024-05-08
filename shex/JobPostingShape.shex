@@ -1,0 +1,48 @@
+PREFIX schema: <https://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+<http://example.org/JobPostingShape> {
+(    schema:physicalRequirement <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:directApply <http://www.w3.org/2001/XMLSchema#boolean>*;
+      schema:estimatedSalary <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:datePosted <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:incentiveCompensation <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:eligibilityToWorkRequirement <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:jobBenefits <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:benefits <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:occupationalCategory <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:jobImmediateStart <http://www.w3.org/2001/XMLSchema#boolean>*;
+      schema:jobStartDate <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:workHours <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:securityClearanceRequirement <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:skills <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:employmentType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:validThrough <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:experienceRequirements <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:industry <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:title <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:educationRequirements <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:employerOverview <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:incentives <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:baseSalary <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:hiringOrganization IRI *;
+      schema:specialCommitments <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:qualifications <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:salaryCurrency <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:sensoryRequirement <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:responsibilities <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:experienceInPlaceOfEducation <http://www.w3.org/2001/XMLSchema#boolean>*;
+      schema:jobLocationType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:name <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:identifier <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:description <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:alternateName <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:subjectOf IRI *;
+      schema:image IRI *;
+      schema:additionalType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:mainEntityOfPage IRI *;
+      schema:disambiguatingDescription <http://www.w3.org/2001/XMLSchema#string>*)
+}

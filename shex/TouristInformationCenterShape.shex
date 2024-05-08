@@ -1,0 +1,82 @@
+PREFIX schema: <https://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+<http://example.org/TouristInformationCenterShape> {
+(    schema:priceRange <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:paymentAccepted <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:openingHours <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:currenciesAccepted <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:geoTouches IRI *;
+      schema:geo IRI *;
+      schema:slogan <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:longitude <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:geoOverlaps IRI *;
+      schema:geoDisjoint IRI *;
+      schema:hasMap IRI *;
+      schema:geoWithin IRI *;
+      schema:photos IRI *;
+      schema:photo IRI *;
+      schema:smokingAllowed <http://www.w3.org/2001/XMLSchema#boolean>*;
+      schema:logo IRI *;
+      schema:publicAccess <http://www.w3.org/2001/XMLSchema#boolean>*;
+      schema:isicV4 <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:telephone <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:geoCrosses IRI *;
+      schema:branchCode <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:isAccessibleForFree <http://www.w3.org/2001/XMLSchema#boolean>*;
+      schema:globalLocationNumber <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:geoEquals IRI *;
+      schema:hasDriveThroughService <http://www.w3.org/2001/XMLSchema#boolean>*;
+      schema:latitude <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:keywords <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:geoContains IRI *;
+      schema:geoCovers IRI *;
+      schema:geoCoveredBy IRI *;
+      schema:geoIntersects IRI *;
+      schema:address <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:faxNumber <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:memberOf IRI *;
+      schema:member IRI *;
+      schema:areaServed <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:awards <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:award <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:owns IRI *;
+      schema:publishingPrinciples IRI *;
+      schema:duns <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:brand IRI *;
+      schema:knowsLanguage <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:knowsAbout <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:foundingDate <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:diversityPolicy IRI *;
+      schema:leiCode <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:location <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:ownershipFundingInfo <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:correctionsPolicy IRI *;
+      schema:iso6523Code <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:taxID <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:naics <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:serviceArea IRI *;
+      schema:email <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:ethicsPolicy IRI *;
+      schema:sponsor IRI *;
+      schema:legalName <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:vatID <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:members IRI *;
+      schema:funder IRI *;
+      schema:dissolutionDate <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:unnamedSourcesPolicy IRI *;
+      schema:actionableFeedbackPolicy IRI *;
+      schema:diversityStaffingReport IRI *;
+      schema:name <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:identifier <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:description <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:alternateName <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:subjectOf IRI *;
+      schema:image IRI *;
+      schema:additionalType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:mainEntityOfPage IRI *;
+      schema:disambiguatingDescription <http://www.w3.org/2001/XMLSchema#string>*)
+}

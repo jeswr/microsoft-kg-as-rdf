@@ -1,0 +1,61 @@
+PREFIX schema: <https://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+<http://example.org/NewsMediaOrganizationShape> {
+(    schema:missionCoveragePrioritiesPolicy IRI *;
+      schema:diversityPolicy IRI *;
+      schema:ownershipFundingInfo <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:correctionsPolicy IRI *;
+      schema:noBylinesPolicy IRI *;
+      schema:ethicsPolicy IRI *;
+      schema:masthead IRI *;
+      schema:verificationFactCheckingPolicy IRI *;
+      schema:unnamedSourcesPolicy IRI *;
+      schema:actionableFeedbackPolicy IRI *;
+      schema:diversityStaffingReport IRI *;
+      schema:memberOf IRI *;
+      schema:member IRI *;
+      schema:areaServed <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:awards <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:award <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:slogan <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:owns IRI *;
+      schema:publishingPrinciples IRI *;
+      schema:duns <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:brand IRI *;
+      schema:knowsLanguage <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:knowsAbout <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:foundingDate <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:leiCode <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:location <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:logo IRI *;
+      schema:isicV4 <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:telephone <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:iso6523Code <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:taxID <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:naics <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:serviceArea IRI *;
+      schema:globalLocationNumber <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:keywords <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:email <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:sponsor IRI *;
+      schema:legalName <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:vatID <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:members IRI *;
+      schema:funder IRI *;
+      schema:dissolutionDate <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:address <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:faxNumber <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:name <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:identifier <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:description <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:alternateName <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:subjectOf IRI *;
+      schema:image IRI *;
+      schema:additionalType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:mainEntityOfPage IRI *;
+      schema:disambiguatingDescription <http://www.w3.org/2001/XMLSchema#string>*)
+}

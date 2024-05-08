@@ -1,0 +1,28 @@
+PREFIX schema: <https://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+<http://example.org/PropertyValueSpecificationShape> {
+(    schema:minValue <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:stepValue <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:valueName <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:readonlyValue <http://www.w3.org/2001/XMLSchema#boolean>*;
+      schema:valueMinLength <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:defaultValue <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:valueMaxLength <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:valueRequired <http://www.w3.org/2001/XMLSchema#boolean>*;
+      schema:maxValue <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:multipleValues <http://www.w3.org/2001/XMLSchema#boolean>*;
+      schema:valuePattern <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:name <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:identifier <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:description <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:alternateName <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:subjectOf IRI *;
+      schema:image IRI *;
+      schema:additionalType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:mainEntityOfPage IRI *;
+      schema:disambiguatingDescription <http://www.w3.org/2001/XMLSchema#string>*)
+}

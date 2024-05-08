@@ -1,0 +1,53 @@
+PREFIX schema: <https://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+<http://example.org/PersonShape> {
+(    schema:memberOf IRI *;
+      schema:honorificSuffix <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:awards <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:award <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:alumniOf IRI *;
+      schema:colleague IRI *;
+      schema:owns IRI *;
+      schema:publishingPrinciples IRI *;
+      schema:additionalName <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:duns <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:brand IRI *;
+      schema:knowsLanguage <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:height IRI *;
+      schema:knowsAbout <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:homeLocation IRI *;
+      schema:birthDate <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:jobTitle <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:isicV4 <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:telephone <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:givenName <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:taxID <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:familyName <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:naics <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:globalLocationNumber <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:netWorth IRI *;
+      schema:email <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:sponsor IRI *;
+      schema:deathDate <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:gender <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:vatID <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:funder IRI *;
+      schema:workLocation IRI *;
+      schema:callSign <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:address <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:honorificPrefix <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:faxNumber <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:name <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:identifier <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:description <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:alternateName <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:subjectOf IRI *;
+      schema:image IRI *;
+      schema:additionalType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:mainEntityOfPage IRI *;
+      schema:disambiguatingDescription <http://www.w3.org/2001/XMLSchema#string>*)
+}

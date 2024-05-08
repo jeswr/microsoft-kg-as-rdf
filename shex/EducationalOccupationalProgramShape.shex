@@ -1,0 +1,34 @@
+PREFIX schema: <https://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+<http://example.org/EducationalOccupationalProgramShape> {
+(    schema:endDate <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:applicationDeadline <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:educationalProgramMode <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:programType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:occupationalCredentialAwarded <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:occupationalCategory <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:termsPerYear <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:educationalCredentialAwarded <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:offers IRI *;
+      schema:programPrerequisites <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:applicationStartDate <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:provider IRI *;
+      schema:startDate <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:timeOfDay <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:typicalCreditsPerTerm IRI *;
+      schema:financialAidEligible <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:numberOfCredits IRI *;
+      schema:name <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:identifier <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:description <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:alternateName <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:subjectOf IRI *;
+      schema:image IRI *;
+      schema:additionalType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:mainEntityOfPage IRI *;
+      schema:disambiguatingDescription <http://www.w3.org/2001/XMLSchema#string>*)
+}

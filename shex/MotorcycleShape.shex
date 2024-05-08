@@ -1,0 +1,80 @@
+PREFIX schema: <https://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+<http://example.org/MotorcycleShape> {
+(    schema:productionDate <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:driveWheelConfiguration <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:bodyType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:emissionsCO2 <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:modelDate <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:numberOfDoors <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:vehicleSpecialUsage <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:fuelType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:seatingCapacity <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:vehicleInteriorType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:numberOfAirbags <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:vehicleConfiguration <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:vehicleInteriorColor <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:numberOfAxles <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:numberOfForwardGears <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:vehicleModelDate <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:meetsEmissionStandard <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:vehicleSeatingCapacity <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:vehicleTransmission <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:callSign <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:purchaseDate <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:dateVehicleFirstRegistered <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:knownVehicleDamages <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:vehicleIdentificationNumber <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:numberOfPreviousOwners <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:pattern <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:width IRI *;
+      schema:nsn <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:model <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:gtin14 <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:gtin <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:awards <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:award <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:isRelatedTo IRI *;
+      schema:isSimilarTo IRI *;
+      schema:slogan <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:countryOfAssembly <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:brand IRI *;
+      schema:height IRI *;
+      schema:gtin12 <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:logo IRI *;
+      schema:material <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:category <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:isFamilyFriendly <http://www.w3.org/2001/XMLSchema#boolean>*;
+      schema:countryOfLastProcessing <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:isVariantOf IRI *;
+      schema:size <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:offers IRI *;
+      schema:keywords <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:colorSwatch IRI *;
+      schema:mobileUrl <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:mpn <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:color <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:positiveNotes <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:gtin13 <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:inProductGroupWithID <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:sku <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:releaseDate <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:negativeNotes <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:depth IRI *;
+      schema:productID <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:gtin8 <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:asin <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:name <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:identifier <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:description <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:alternateName <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:subjectOf IRI *;
+      schema:image IRI *;
+      schema:additionalType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:mainEntityOfPage IRI *;
+      schema:disambiguatingDescription <http://www.w3.org/2001/XMLSchema#string>*)
+}

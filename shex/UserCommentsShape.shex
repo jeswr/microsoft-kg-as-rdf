@@ -1,0 +1,40 @@
+PREFIX schema: <https://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+<http://example.org/UserCommentsShape> {
+(    schema:creator IRI *;
+      schema:commentTime <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:commentText <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:contributor IRI *;
+      schema:endDate <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:performer IRI *;
+      schema:location <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:composer IRI *;
+      schema:performers IRI *;
+      schema:attendees IRI *;
+      schema:attendee IRI *;
+      schema:offers IRI *;
+      schema:isAccessibleForFree <http://www.w3.org/2001/XMLSchema#boolean>*;
+      schema:keywords <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:sponsor IRI *;
+      schema:typicalAgeRange <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:funder IRI *;
+      schema:previousStartDate <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:organizer IRI *;
+      schema:inLanguage <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:startDate <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:doorTime <http://www.w3.org/2001/XMLSchema#dateTime>*;
+      schema:translator IRI *;
+      schema:name <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:identifier <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:description <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:alternateName <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:subjectOf IRI *;
+      schema:image IRI *;
+      schema:additionalType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:mainEntityOfPage IRI *;
+      schema:disambiguatingDescription <http://www.w3.org/2001/XMLSchema#string>*)
+}

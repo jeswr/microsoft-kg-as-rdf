@@ -1,0 +1,47 @@
+PREFIX schema: <https://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+<http://example.org/DefenceEstablishmentShape> {
+(    schema:openingHours <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:geoTouches IRI *;
+      schema:geo IRI *;
+      schema:slogan <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:longitude <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:geoOverlaps IRI *;
+      schema:geoDisjoint IRI *;
+      schema:hasMap IRI *;
+      schema:geoWithin IRI *;
+      schema:photos IRI *;
+      schema:photo IRI *;
+      schema:smokingAllowed <http://www.w3.org/2001/XMLSchema#boolean>*;
+      schema:logo IRI *;
+      schema:publicAccess <http://www.w3.org/2001/XMLSchema#boolean>*;
+      schema:isicV4 <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:telephone <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:geoCrosses IRI *;
+      schema:branchCode <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:isAccessibleForFree <http://www.w3.org/2001/XMLSchema#boolean>*;
+      schema:globalLocationNumber <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:geoEquals IRI *;
+      schema:hasDriveThroughService <http://www.w3.org/2001/XMLSchema#boolean>*;
+      schema:latitude <http://www.w3.org/2001/XMLSchema#double>*;
+      schema:keywords <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:geoContains IRI *;
+      schema:geoCovers IRI *;
+      schema:geoCoveredBy IRI *;
+      schema:geoIntersects IRI *;
+      schema:address <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:faxNumber <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:name <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:identifier <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:description <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:alternateName <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:subjectOf IRI *;
+      schema:image IRI *;
+      schema:additionalType <http://www.w3.org/2001/XMLSchema#string>*;
+      schema:mainEntityOfPage IRI *;
+      schema:disambiguatingDescription <http://www.w3.org/2001/XMLSchema#string>*)
+}
