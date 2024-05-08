@@ -7,8 +7,8 @@ import { ScheduleActionShapeShapeType } from './ldo/ScheduleActionShape.shapeTyp
 import { authFetch } from './auth';
 
 async function main() {
-    // https://graph.microsoft.com/v1.0/users?$filter=mail eq 'nigel.shadbolt@jesus.ox.ac.uk'
-    const res = await authFetch('https://graph.microsoft.com/v1.0/users(\'nigel.shadbolt@jesus.ox.ac.uk\')');
+    // https://graph.microsoft.com/v1.0/users?$filter=mail eq 'jesse.wright@jesus.ox.ac.uk'
+    const res = await authFetch('https://graph.microsoft.com/v1.0/users(\'jesse.wright@jesus.ox.ac.uk\')');
     console.log(res);
 }
 
