@@ -21,7 +21,7 @@
     "eml2pod": "^0.1.0",
     "n3": "^1.17.2",
     "shaclc-write": "^1.4.2",
-    "undici": "^6.16.0"
+    "undici": "^6.19.2"
   },
   "devDependencies": {
     "@comunica/query-sparql": "^3.0.3",
